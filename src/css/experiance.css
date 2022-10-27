@@ -1,0 +1,496 @@
+@keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-webkit-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-moz-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+@-o-keyframes down-btn {
+    0% { bottom:20px; }    
+    100% { bottom:0px; }
+
+    0% { opacity:0; }    
+    100% { opaicty:1; }
+}
+
+.category-name {
+    font-family: Courier New, Courier, monospace;
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.card-category-1 {
+    font-family: Courier New, Courier, monospace;
+    margin-bottom: 45px;
+    text-align: center;
+    margin-top: 120px;
+}
+    .card-category-1 div, .card-category-2 div {
+        display:inline-block;
+    }
+
+    .card-category-1 > div, .card-category-2 > div:not(:last-child) {
+        margin: 10px 5px;
+        text-align: left;
+    }
+
+    /* Basic Card */
+    .basic-card {
+        width:300px;
+        position: relative;
+        
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    }
+    
+        .basic-card .card-content {
+            padding: 30px;
+        }
+
+        .basic-card .card-title {
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .basic-card .card-text {
+            line-height: 1.6;
+        }
+
+        .basic-card .card-link {
+            padding: 25px;
+            width: -webkit-fill-available;
+        }
+
+            .basic-card .card-link a {
+                text-decoration: none;
+                position: relative;
+                padding: 10px 0px;
+            }
+
+            .basic-card .card-link a:after {
+                top: 30px;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                width: 0;
+
+                -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            }
+
+            .basic-card .card-link a:hover:after { 
+                width: 100%; 
+                left: 0; 
+            }
+    
+    
+    .basic-card-aqua {
+        background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
+    }
+
+        .basic-card-aqua .card-content, .basic-card .card-link a {
+            color: #fff;
+        }
+        
+        .basic-card-aqua .card-link {
+            border-top:1px solid #82c1bb;
+        }
+
+            .basic-card-aqua .card-link a:after {
+                background:#fff;
+            }
+
+    .basic-card-lips {
+        background-image: linear-gradient(to bottom right, #ec407b, #ff7d94);
+    }
+
+        .basic-card-lips .card-content {
+            color: #fff;
+        }
+
+        .basic-card-lips .card-link {
+            border-top: 1px solid #ff97ba;
+        }
+
+            .basic-card-lips .card-link a:after {
+                background:#fff;
+            }
+    
+    .basic-card-light {
+        border: 1px solid #eee;
+    }
+
+        .basic-card-light .card-title, .basic-card-light .card-link a {
+            color: #636363;
+        }
+        
+        .basic-card-light .card-text {
+            color: #7b7b7b;
+        }
+
+        .basic-card-light .card-link {
+            border-top: 1px solid #eee;
+        }
+
+            .basic-card-light .card-link a:after {
+                background:#636363;
+            }
+
+    .basic-card-dark {
+        background-image: linear-gradient(to bottom right, #252525, #4a4a4a);
+    }
+
+        .basic-card-dark .card-title, .basic-card-dark .card-link a {
+            color:#eee;
+        }
+
+        .basic-card-dark .card-text {
+            color: #dcdcdcdd;
+        }
+
+        .basic-card-dark .card-link {
+            border-top: 1px solid #636363;
+        }
+
+        .basic-card-dark .card-link a:after {
+            background:#eee;
+        }
+
+
+    /* Image Card */
+    .img-card {
+        width:300px;
+        position: relative;
+        border-radius: 5px;
+        text-align: left;
+
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);        
+    }
+
+        .img-card .card-image {
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 5px 5px 0px 0px;
+            height: 200px;
+        }
+
+        .img-card .card-image img {
+            width:100%;
+            border-radius: 5px 5px 0px 0px;
+            
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        .img-card .card-image:hover img {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }        
+
+        .img-card .card-text {
+            padding: 0 15px 15px;
+            line-height: 1.5;   
+        }
+
+        .img-card .card-link {
+            padding: 20px 15px 30px;
+            width: -webkit-fill-available;
+        }
+
+            .img-card .card-link a {
+                text-decoration: none;
+                position: relative;
+                padding: 10px 0;
+            }
+
+            .img-card .card-link a:after {
+                top: 30px;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                width: 0;
+
+                -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            }
+ 
+     
+@media only screen and (max-width: 480px) {
+    .io-card-1 .card-content .card-text {
+        display: none;
+    }
+
+    .io-card-1 .card-link {
+        top:85px;
+    }
+
+    .card-category-4 .sp-card-1 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0 0px 30px 0;
+        margin: 30px 0;
+    }
+
+        .card-category-4 .sp-card-1 .shop-button {
+            padding: 0;
+        }
+
+        .card-category-4 .sp-card-1 ul li:nth-child(1) {
+            padding: 20px;
+            float: none;
+        }
+
+        .card-category-4 .sp-card-1 ul li:nth-child(2) {
+            text-align: center;
+            padding: 0 0 30px 0;
+            float: none;
+        }
+
+    .card-category-4 .sp-card-2 {
+        width: 300px;
+    }
+
+    .card-category-4 .sp-card-3 {
+        width: 100%;
+        height:auto;
+    }
+
+    .card-category-4 .sp-card-3 .card-title {
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+
+    .card-category-4 .sp-card-3 .product-details .product-img {
+        width: 100%;
+        float: none;
+        padding-top: 10px;
+        display: block;
+    }
+
+        .card-category-4 .sp-card-3 .product-details .product-img img {
+            height: auto;
+            width: 90%;
+        }
+
+    .card-category-4 .sp-card-3 .product-details .product-description {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+        .card-category-4 .sp-card-3 .product-details .product-description ul {
+            text-align: center;
+        }
+        
+            .card-category-4 .sp-card-3 .product-details .product-description ul li {
+                font-size: 25px;
+            }
+            
+            .card-category-4 .sp-card-3 .product-details .product-description ul li:last-child {
+                text-decoration: underline;
+                padding-top: 20px;
+            }
+        
+        .card-category-4 .sp-card-3 .footer-card p {
+            font-size: 20px;
+        }
+
+        .card-category-4 .sp-card-3 .footer-card li:nth-child(1) {
+            padding-top: 5px;
+        }
+
+        .card-category-4 .sp-card-3 .footer-card li:nth-child(2) {
+            width: 100%;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .card-category-4 ul li:nth-child(3) { 
+            margin-top: 25px;
+            padding: 0 15px;
+        }
+
+        .card-category-5 .per-card-2 {
+            margin: 20px 40px;
+        }
+
+        .card-category-5 .per-card-3 {
+            width: 350px;
+        }
+
+            .card-category-5 .per-card-3 .card-image .per-name {
+                letter-spacing: 4px;
+            }
+}
+
+@media only screen and (max-width: 360px) {
+    .ioverlay-card .card-content {
+        top: 10px;
+    }
+
+    .io-card-1 .card-link {
+        top: 70px;
+    }
+
+    .card-category-5 .per-card-2 {
+        width: 275px;
+    }
+
+        .card-category-5 .per-card-2 .card-image {
+            width: 295px;
+        }
+
+    .card-category-5 .per-card-3 {
+        width: 320px;
+        height: 254px;
+    }
+}
+.sauvih{
+    text-decoration: underline;
+    margin-top: 100px;
+    color: pink;
+    text-align: center;
+    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+}
+.saum{
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+}
+
+/* contributions */
+.sau{
+  font-family: Courier New, Courier, monospace;
+  text-decoration: underline;
+  color: pink;
+  text-align: center;
+}
+
+/*
+ * Animated and Responsive Contributions GitHub Card
+ *   With love to Rocketseat omnistack10 2020 by @FredSRocha
+ */
+ ul {
+    list-style: none;
+  }
+  /*
+  .wday,
+  */
+  .contrib-legend,
+  .contrib-footer {
+    display: none;
+  }
+  .js-calendar-graph-svg {
+    display: block;
+    margin: 0 auto;
+    width: 790px;
+    height: 100%;
+    /*margin-left: -20px;*/
+  }
+  [data-graph-url] {
+    overflow-x: auto;
+    padding-right: 20px;
+  }
+  .wday,
+  .calendar-graph text.month {
+    font-size: 10px;
+    fill: wheat;
+  }
+  
+  .js-yearly-contributions h2 {
+    color: #586069;
+    font-size: 0.85rem;
+    /* font-family references by: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+  }
+  .js-yearly-contributions {
+    background-color: black;
+    border-radius: 3px;
+    padding: 0.5em 1em 1em;
+    max-width: 790px;
+    margin: 0 auto;
+  }
+  body {
+    /*
+      background: #ee0979;
+      background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+    */
+    /* background: #b9f; */
+    /* background: -webkit-linear-gradient(to right, #b9f, #7159c1); */
+    /* background: linear-gradient(to right, #b9f, #7159c1); */
+    /* background-size: 350% 350%; */
+    animation: waveColors 8s ease infinite;
+    /* margin-top: 3em; */
+  }
+  
+  /* Animation Wave Color */
+  
+  @-webkit-keyframes waveColors {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  
+  @keyframes waveColors {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  
+  
+  /* End Animation Wave Color */

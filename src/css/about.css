@@ -1,0 +1,114 @@
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+  color: white;
+}
+.vihar
+{
+  color: yellow;
+  font-family: Courier New, Courier, monospace;
+}
+.vih{
+  font-family: Courier New, Courier, monospace;
+  font-size: 20px;
+}
+body {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  font-family: Open Sans, sans-serif;
+    font-stretch: expanded;
+}
+
+.masthead {
+    padding: 6em 0;
+    background: 
+    linear-gradient(
+      rgba(128, 128, 128, 0.75), 
+      rgba(128, 128, 128, 0.75)
+    ),      url('https://i.imgur.com/pZFv89y.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 1em #808090;
+    height: 60vh;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+ 	 font-family: "Gentium Book Basic", Georgia, serif;
+  	font-style: italic;
+  	font-size: 3em;
+}
+
+.masthead-heading {
+    margin-top: -0.3em;
+  	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 800;
+  	font-size: 7em;
+  	letter-spacing: -0.02em;
+  	text-transform: uppercase;
+}
+
+.content-footer,
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.social > li {
+    display: inline-block;
+  	word-spacing: 50px;
+  	font-weight: bold;
+  	text-decoration: none;
+}
+
+
+.introduction > p,
+.location > p,
+.content-footer > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  font-family: "Open Sans";
+  
+}
+
+.questions-section > h2 {
+  font-family: "Gentium Book Basic", 	Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+
+}
+
+section > h1 {
+  margin-top: 2em;
+  font-family: "Open Sans";
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #808090;
+}
+
+.content-footer{
+	  max-width: 100%;
+  	padding: 4em;
+    background-color: #2a2a2a;
+    background-size: cover;
+}
+
+a { 
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	font-weight: 800;
+}
+
+a:hover {
+	text-decoration: underline;
+}
